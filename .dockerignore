@@ -1,0 +1,7 @@
+/docs/
+/lib/
+/bin/
+/.shards/
+/download_cache/
+/shard.lock
+qt5.lock

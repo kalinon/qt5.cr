@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  build-linux:
+    image: qt5-linux
+    build:
+      context: ../../
+      dockerfile: support/docker/Dockerfile
+    command: support/docker/scripts/build.sh
+    volumes:
+      - ../../:/app
+    working_dir: /app
