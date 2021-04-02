@@ -2,7 +2,7 @@ require "semantic_version"
 require "xml"
 require "spoved/logger"
 
-require "../../qt5"
+# require "../../qt5"
 
 require "./data"
 require "./parser/nodes"

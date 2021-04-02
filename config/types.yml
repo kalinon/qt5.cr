@@ -151,3 +151,7 @@ types: # Type rewrite rules
     ignore_methods:
       - "operator<"
   <<: deprecated.yml
+  "QtAdditions::QWidgetListWidget::ListModifiedCallbackFunction":
+    ignore: true
+  "std::vector<QtAdditions::QWidgetListItem *>":
+    ignore: true

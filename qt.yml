@@ -26,7 +26,7 @@ else:
 
 parser: # Clang parser configuration
   if_TARGET_TRIPLE_is_: # TARGET_TRIPLE is empty.
-    flags: [ "-x", "c++", "-std=c++11", "-fPIC" ]
+    flags: ["-x", "c++", "-std=c++11", "-fPIC"]
   else:
     flags:
       - "-x"
@@ -40,10 +40,16 @@ parser: # Clang parser configuration
     - QtCore/QtCore
     - QtGui/QtGui
     - QtWidgets/QtWidgets
+    - QtAdditions/QTableWidgetWithComboBox.h
+    - QtAdditions/QtUtilities.h
+    - QtAdditions/QWidgetListItem.h
+    - QtAdditions/QWidgetListMimeData.h
+    - QtAdditions/QWidgetListWidget.h
+    - QtAdditions/QWidgetScrollListWidget.h
   includes:
     - "{QT_INCLUDE_DIR}/"
     - "{QT_INCLUDE_DIR}/QtCore/"
     - "{QT_INCLUDE_DIR}/QtGui/"
     - "{QT_INCLUDE_DIR}/QtWidgets/"
     - "{LLVM_INCLUDES}"
-
+    - "%/ext/"

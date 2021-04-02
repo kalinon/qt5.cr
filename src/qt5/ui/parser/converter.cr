@@ -57,7 +57,7 @@ module Qt::Ui
         {% begin %}
           case klass
           {% for sub_class in Qt::Widget.all_subclasses %}
-          {% if !sub_class.abstract? && !sub_class.name.includes?("Impl") && sub_class.name =~ /^Qt::/ %}
+          {% if !sub_class.abstract? && !sub_class.name.includes?("Impl") && sub_class.name =~ /^Qt::/ && !sub_class.name.includes?("WidgetScrollListWidget") %}
           when {{sub_class.name.gsub(/^Qt::/, "Q").id.stringify}}
             {{sub_class.id}}.new
           {% end %}{% end %}
