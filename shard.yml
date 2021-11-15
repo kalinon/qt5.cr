@@ -12,6 +12,6 @@ dependencies:
     github: f-fr/bindgen
     branch: integrate
 scripts:
-  postinstall: shards
+  postinstall: shards && /bin/sh build.sh
 
 license: MPL-2
