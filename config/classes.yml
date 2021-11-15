@@ -96,7 +96,7 @@ classes:
   QGraphicsPathItem: GraphicsPathItem
   QGraphicsPolygonItem: GraphicsPolygonItem
   QGraphicsRectItem: GraphicsRectItem
-  QGraphicsSimpleTextItem: GraphicsSimpleTextItem
+    #QGraphicsSimpleTextItem: GraphicsSimpleTextItem
   QGraphicsPixmapItem: GraphicsPixmapItem
   QPen: Pen
   QBrush: Brush
