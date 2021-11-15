@@ -12,6 +12,6 @@ dependencies:
     github: Papierkorb/bindgen
     branch: master
 scripts:
-  postinstall: shards
+  postinstall: shards && /bin/sh build.sh
 
 license: MPL-2
