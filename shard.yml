@@ -9,8 +9,8 @@ crystal: ">= 0.36.1, < 2.0.0"
 
 dependencies:
   bindgen:
-    github: Papierkorb/bindgen
-    branch: master
+    github: f-fr/bindgen
+    branch: integrate
 scripts:
   postinstall: shards
 
