@@ -17,6 +17,6 @@ $(LIBFILE): $(OBJFILES)
 	$(AR) rcs $@ $^
 
 %.o: %.cpp
-	$(CC) -std=c++11 -c -o $@ $< $(CXXFLAGS)
+	$(CC) -std=c++14 -c -o $@ $< $(CXXFLAGS)
 
 .PHONY: clean
